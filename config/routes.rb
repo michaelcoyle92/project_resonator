@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   patch "/items/:id" => "items#update"
   delete "/items/:id" => "items#destroy"
   
+  root "items#index"
+
+  resources :items do
+    resources :comments
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
