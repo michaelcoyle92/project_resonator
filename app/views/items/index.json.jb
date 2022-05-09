@@ -1,6 +1,13 @@
 @items.map do |item|
   {
     id: item.id,
+    name: item.name,
+    manufacturer: item.manufacturer,
+    year: item.year,
+    description: item.description,
+    item_id: item.item_id,
+    created_at: item.created_at,
+    updated_at: item.updated_at,
     url: item_url(item, format: :json)
   }
 end
