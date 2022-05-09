@@ -4,7 +4,7 @@
   manufacturer: @item.manufacturer,
   year: @item.year,
   description: @item.description,
-  item_id: @item.item_id,
+  category_id: @item.category_id,
   created_at: @item.created_at,
   updated_at: @item.updated_at
 }

@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
       manufacturer: params[:manufacturer],
       year: params[:year],
       description: params[:description],
-      item_id: params[:item_id]
+      category_id: params[:category_id]
     )
     @item.save
     render template: "items/show"
@@ -28,7 +28,7 @@ class ItemsController < ApplicationController
     @item.manufacturer = params[:manufacturer] || @item.manufacturer
     @item.year = params[:year] || @item.year
     @item.description = params[:description] || @item.description
-    @item.item_id = params[:item_id] || @item.item_id
+    @item.category_id = params[:category_id] || @item.category_id
     @item.save
     render template: "items/show"
   end
