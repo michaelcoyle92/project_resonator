@@ -1,0 +1,6 @@
+@items.map do |item|
+  {
+    id: item.id,
+    url: item_url(item, format: :json)
+  }
+end
