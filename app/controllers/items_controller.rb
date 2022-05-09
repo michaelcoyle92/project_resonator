@@ -13,8 +13,17 @@ class ItemsController < ApplicationController
       description: params[:description],
       category_id: params[:category_id]
     )
-    @item.save
-    render template: "items/show"
+    
+    if @item.save
+      param[:images].each do |image|
+        image = Image.new(url: image, item_id: item.id)
+        item.save
+      end
+      render item.as_json
+    else
+      render json: {errors: item.errors.full_messages}, status: :unprocessable_entity
+    end
+    
   end
   
   def show
