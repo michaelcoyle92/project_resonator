@@ -1,6 +1,4 @@
 class CommentsController < ApplicationController
-
-  class CommentsController < ApplicationController
     def create
       @article = Item.find(params[:item_id])
       @comment = @item.comments.create(comment_params)
