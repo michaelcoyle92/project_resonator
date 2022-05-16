@@ -2,6 +2,9 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
     # render json: items.as_json
+    if params[:search_term]
+      @items = Item.where("name LIKE ?", "%#{params[:search_term]}%").order(:id)
+    end
     render template: "items/index"
   end
 
