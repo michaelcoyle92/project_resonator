@@ -4,7 +4,8 @@ Image.create!([
   {url: "https://static.wixstatic.com/media/db0e5b_d1b16b1c1cf54e4cb0227da667084b3a~mv2.jpg/v1/fill/w_560,h_527,al_c,q_80,enc_auto/db0e5b_d1b16b1c1cf54e4cb0227da667084b3a~mv2.jpg", item_id: 2},
   {url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmoI0TWu-Igympp08hcA2DMiHsK-zylYGyBQkF_i_dGThCPCPkaXWQPh0Z3Llew2NnRZ0&usqp=CAU", item_id: 2},
   {url: "https://static.wixstatic.com/media/db0e5b_4a37eba1e2784339b8a4e785d3bd718e~mv2.jpg/v1/fill/w_640,h_602,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/db0e5b_4a37eba1e2784339b8a4e785d3bd718e~mv2.jpg", item_id: 3},
-  {url: "https://encrypted-tbn0.gstatic.com/image\ns?q=tbn:ANd9GcQFJuYPqtoM9TpWC01HbedCXMlF6Z8ltYldNA&usqp=CAU", item_id: 3}
+  {url: "https://encrypted-tbn0.gstatic.com/image\ns?q=tbn:ANd9GcQFJuYPqtoM9TpWC01HbedCXMlF6Z8ltYldNA&usqp=CAU", item_id: 3},
+  {url: "https://images.reverb.com/image/upload/s--lsvYexOA--/a_exif,c_limit,e_unsharp_mask:80,f_auto,fl_progressive,g_south,h_1600,q_80,w_1600/v1423528311/ctx7gddw157ydpsatsar.jpg", item_id: 1}
 ])
 Category.create!([
   {name: "Tricone"},
