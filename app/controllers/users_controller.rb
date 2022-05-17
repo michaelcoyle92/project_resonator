@@ -12,4 +12,13 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
+  def show
+    if current_user
+      user = current_user
+      render json: {"user" => user}
+    else
+      render json: {message: "You must be logged in to view the archive"}, status: :unauthorized
+    end
+  end
 end
