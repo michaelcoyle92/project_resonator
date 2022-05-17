@@ -4,7 +4,9 @@
   manufacturer: @item.manufacturer,
   year: @item.year,
   description: @item.description,
-  images: @item.images[1],
+  images1: @item.images[0],
+  images2: @item.images[1],
+  images3: @item.images[2],
   category_id: @item.category_id,
   created_at: @item.created_at,
   updated_at: @item.updated_at
