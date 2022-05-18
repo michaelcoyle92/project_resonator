@@ -9,8 +9,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "username": "Test name",
-  "email": "test@test.com",
+  "username": "Test 2 name",
+  "email": "test2@test.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -20,6 +20,11 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test2@test.com",
   "password": "password"
 }
+
+###
+
+GET http://localhost:3000/users/6
+Authorization: Bearer: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE2NTI5NjgwMDV9.zXyksQd9cVhAzcMP2kAmADFqynQBDXmsglEZqtXo1aE
