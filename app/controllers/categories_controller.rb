@@ -3,4 +3,5 @@ class CategoriesController < ApplicationController
     categories = Category.all
     render json: categories.as_json
   end
+
 end
